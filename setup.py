@@ -37,9 +37,4 @@ setup(
     zip_safe=False,
     install_requires=install_requirements,
     tests_require=tests_requirements,
-    entry_points={
-        "console_scripts": [
-            "nested_dataclasses = nested_dataclasses.cli:nested_dataclasses_command"
-        ]
-    },
 )

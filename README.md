@@ -65,16 +65,6 @@ In case you do not have python 3.8 on your machine, install python using
 [pyenv](https://github.com/pyenv/pyenv) and try the previous command again.
 See install pyenv below for instructions. 
 
-There will be a script you can run like this::
-
-```bash
-pipenv run nested-dataclasses
-```
-
-It runs the `main()` function in `nested-dataclasses/scripts.py`,
-adjust that if necessary. The script is configured in `setup.py` (see
-`entry_points`).
-
 In order to get nicely formatted python files without having to spend manual
 work on it, run the following command periodically:
 
