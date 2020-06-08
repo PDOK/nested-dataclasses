@@ -2,7 +2,7 @@ Changelog of nested-dataclasses
 ===================================================
 
 
-0.1 (unreleased)
+0.1 (2020-06-08)
 ----------------
 
 - Initial project structure created with cookiecutter and
