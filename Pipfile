@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+"black" = "==19.*"
+"flake8" = "*"
+"ipdb" = "*"
+"ipython" = "*"
+"pytest" = "==5.4.*"
+"pytest-black" = "*"
+"pytest-flakes" = "*"
+"zest.releaser" = "*"
+
+[packages]
+# === This package ===
+# Should always be installed like this, else setup.py is bypassed (and we would
+# have to modify PYTHONPATH at several points in the project)
+"nested-dataclasses" = {path = ".", editable = true}
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+# This is necessary to be able to install black and pipenv-black.
+allow_prereleases = true
