@@ -6,7 +6,7 @@ Both parent and child class should be decorated with nested.
 Usage:
 
 Example usage of the parent attribute on a nested dataclass:
-```
+```python
 from dataclasses import dataclass
 from typing import List
 
