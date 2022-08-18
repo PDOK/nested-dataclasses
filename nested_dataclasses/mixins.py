@@ -1,4 +1,4 @@
-from collections import Mapping
+from collections.abc import Mapping
 from dataclasses import fields, is_dataclass
 from typing import get_origin, get_args
 import inspect

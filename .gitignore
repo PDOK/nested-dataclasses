@@ -32,3 +32,5 @@ coverage.xml
 
 # Docker
 docker-compose.override.yml
+
+build/

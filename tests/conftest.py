@@ -138,7 +138,9 @@ def invalid_nested_typed_child():
         integer=TEST_STRING,
         string=TEST_INT,
         floating_point=TEST_STRING,
-        string_list=[TEST_INT,],
+        string_list=[
+            TEST_INT,
+        ],
         string_dict={TEST_STRING: TEST_INT},
     )
 
@@ -146,7 +148,9 @@ def invalid_nested_typed_child():
 @pytest.fixture
 def invalid_typed_parent(invalid_nested_typed_child):
     return TypedClassParent(
-        nested_list=[invalid_nested_typed_child,],
+        nested_list=[
+            invalid_nested_typed_child,
+        ],
         nested_tuple=(invalid_nested_typed_child,),
         nested_dict={TEST_STRING: invalid_nested_typed_child},
     )
@@ -155,7 +159,9 @@ def invalid_typed_parent(invalid_nested_typed_child):
 @pytest.fixture
 def valid_typed_parent(valid_nested_typed_child):
     return TypedClassParent(
-        nested_list=[valid_nested_typed_child,],
+        nested_list=[
+            valid_nested_typed_child,
+        ],
         nested_tuple=(valid_nested_typed_child,),
         nested_dict={TEST_STRING: valid_nested_typed_child},
     )
