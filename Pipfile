@@ -4,11 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [dev-packages]
-"black" = "==19.*"
+"black" = "==22.*"
 "flake8" = "*"
 "ipdb" = "*"
 "ipython" = "*"
-"pytest" = "==5.4.*"
+"pytest" = "==7.1.*"
 "pytest-black" = "*"
 "pytest-flakes" = "*"
 "zest.releaser" = "*"
@@ -20,7 +20,7 @@ name = "pypi"
 "nested-dataclasses" = {path = ".", editable = true}
 
 [requires]
-python_version = "3.8"
+python_version = "3"
 
 [pipenv]
 # This is necessary to be able to install black and pipenv-black.
